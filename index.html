@@ -5,8 +5,21 @@
   <title>My Website</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
+<script>
+fetch("https://flask-backend-f14q.onrender.com//ping")
+  .then(res => res.json())
+  .then(data => {
+    document.body.innerHTML += `<p>Backend says: ${JSON.stringify(data)}</p>`;
+  })
+  .catch(err => {
+    document.body.innerHTML += `<p>Backend error</p>`;
+    console.error(err);
+  });
+</script>
+
 <body>
-  <h1>Hello internet</h1>
-  <p>This site exists. Barely. But it exists.</p>
+  <h1>Hello Amelia,</h1>
+  <p>I made this website.</p>
 </body>
 </html>
