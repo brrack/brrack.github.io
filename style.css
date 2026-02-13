@@ -5,6 +5,18 @@ body {
   color: #eee;
   padding: 40px;
   text-align: center;
+  height: 100%;
+  margin: 0;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 h1 {
@@ -17,4 +29,5 @@ footer {
   color: #555;
   background-color: #222222;
   display: block;
+  padding: 20px;
 }
