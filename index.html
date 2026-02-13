@@ -10,7 +10,7 @@
 fetch("https://flask-backend-f14q.onrender.com//ping")
   .then(res => res.json())
   .then(data => {
-    document.body.innerHTML += `<p>Backend says: ${JSON.stringify(data)}</p>`;
+    document.footer.innerHTML += `<p>Backend says: ${JSON.stringify(data)}</p>`;
   })
   .catch(err => {
     document.body.innerHTML += `<p>Backend error</p>`;
@@ -22,4 +22,9 @@ fetch("https://flask-backend-f14q.onrender.com//ping")
   <h1>The Brack Allen Website</h1>
   <p>I made this website.</p>
 </body>
+
+<footer>
+  <p>footer</p>
+</footer>
+
 </html>
