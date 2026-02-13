@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: x-large;
   background: #111;
   color: #eee;
@@ -10,4 +10,9 @@ body {
 h1 {
   font-size: 10em;
   margin-bottom: 20px;
+}
+
+footer {
+  font-size: 0.8em;
+  color: #555;
 }
