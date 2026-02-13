@@ -6,18 +6,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<script>
-fetch("https://flask-backend-f14q.onrender.com//ping")
-  .then(res => res.json())
-  .then(data => {
-    document.footer.innerHTML += `<p>Backend says: ${JSON.stringify(data)}</p>`;
-  })
-  .catch(err => {
-    document.body.innerHTML += `<p>Backend error</p>`;
-    console.error(err);
-  });
-</script>
-
 <body>
   <div class="page">
 
