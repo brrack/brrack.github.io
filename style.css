@@ -12,7 +12,8 @@ body {
 .BRACK {
   color: #343444;
   outline-color: #0d51f0;
-  outline-width: 10px;
+  outline-style: solid;
+  outline-width: 3px;
   width: 100%;
 }
 
