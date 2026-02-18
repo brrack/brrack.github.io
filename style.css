@@ -10,11 +10,9 @@ body {
 }
 
 .BRACK {
-  color: #343444;
-  outline-color: #0d51f0;
-  outline-style: solid;
-  outline-width: 3px;
-  width: 100%;
+  font-size: 50px;
+  color: transparent;
+  -webkit-text-stroke: 5px #0d51f0;
 }
 
 .page {
