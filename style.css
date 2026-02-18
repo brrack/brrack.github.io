@@ -1,12 +1,18 @@
 body {
   font-family: "Arial", sans-serif;
   font-size: x-large;
-  background: #292b90;
+  background: #343444;
   color: #eee;
   padding: 40px;
   text-align: center;
   height: 100%;
   margin: 0;
+}
+
+.BRACK {
+  color: #343444;
+  outline: #0d51f0;
+  font-size: xx-large;
 }
 
 .page {
