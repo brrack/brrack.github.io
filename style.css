@@ -1,8 +1,8 @@
 body {
-  font-family: "Arial", sans-serif;
+  font-family: monospace;
   font-size: x-large;
   background: #343444;
-  color: #0d51f0;
+  color: #5a7bc9;
   text-align: center;
   height: 100%;
   margin: 0;
@@ -15,12 +15,15 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.BRACK {
-  margin-top: 130px;
-  font-size: 380px;
-  color: transparent;
-  -webkit-text-stroke: 10px #0d51f0;
-  transform: scaleY(2.25);
+h1 {
+  margin-top: 80px;
+  font-size: 150px;
+  color: #5a7bc9;
+}
+
+.projects {
+  margin-top: -30px;
+  font-size: 40px;
 }
 
 .page {
@@ -33,8 +36,30 @@ main {
   flex: 1;
 }
 
+img {
+  margin-top: -70px;
+  align-self: center;
+  transform: scale(.6);
+  outline-style: solid;
+  outline-color: #222222;
+  outline-width: 8px;
+}
+
+.image-container {
+    display: flex; /* Makes the child elements align horizontally */
+    justify-content: center; /* Centers the images within the container (optional) */
+    align-items: center; /* Aligns items vertically (optional) */
+    gap: 10px; /* Adds space between images (optional, newer CSS property) */
+}
+
+.image-container img {
+    /* Optional: style images to have the same size and fit within the line */
+    width: 30%; /* Example: three images with some margin space */
+    height: auto;
+}
+
 footer {
-  font-size: 0.8em;
+  font-size: 0.9em;
   color: #555;
   background-color: #222222;
   display: block;
