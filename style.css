@@ -46,16 +46,9 @@ img {
 }
 
 .image-container {
-    display: flex; /* Makes the child elements align horizontally */
-    justify-content: center; /* Centers the images within the container (optional) */
-    align-items: center; /* Aligns items vertically (optional) */
-    gap: 10px; /* Adds space between images (optional, newer CSS property) */
-}
-
-.image-container img {
-    /* Optional: style images to have the same size and fit within the line */
-    width: 30%; /* Example: three images with some margin space */
-    height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
