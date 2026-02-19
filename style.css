@@ -37,18 +37,30 @@ main {
 }
 
 img {
-  margin-top: -70px;
+  margin: 0;
   align-self: center;
-  transform: scale(.6);
+  transform: scale(.35);
   outline-style: solid;
   outline-color: #222222;
   outline-width: 8px;
 }
 
-.image-container {
+.deca-images {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+article {
+  align-self: center;
+  border: 8px solid #222222;
+  border-radius: 12px;
+  padding: 24px;
+  background: #323234;
+  box-shadow: 0 0 40px #395084;
+  max-width: 400px;
+  max-height: 400px;
+  margin-bottom: 50px;
 }
 
 footer {
@@ -56,5 +68,5 @@ footer {
   color: #555;
   background-color: #222222;
   display: block;
-  padding: 20px;
+  padding: 30px;
 }
