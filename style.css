@@ -10,11 +10,11 @@ body {
 }
 
 .BRACK {
-  margin-top: 0;
+  margin-top: 10px;
   font-size: 380px;
   color: transparent;
-  -webkit-text-stroke: 5px #0d51f0;
-  transform: scaleY(1.5);
+  -webkit-text-stroke: 10px #0d51f0;
+  transform: scaleY(2);
 }
 
 .page {
