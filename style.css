@@ -22,7 +22,7 @@ h1 {
 }
 
 .projects {
-  margin-top: -30px;
+  margin-top: -50px;
   font-size: 40px;
 }
 
@@ -37,7 +37,6 @@ main {
 }
 
 img {
-  margin: 0;
   align-self: center;
   transform: scale(.35);
   outline-style: solid;
@@ -46,9 +45,18 @@ img {
 }
 
 .deca-images {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: -50px;
+}
+
+img:first-child {
+  grid-column: 1;
+}
+
+img:second-child {
+  grid-column: 2;
 }
 
 article {
@@ -59,7 +67,8 @@ article {
   background: #323234;
   box-shadow: 0 0 40px #395084;
   max-width: 400px;
-  max-height: 400px;
+  max-height: 600px;
+  margin: 0 auto;
   margin-bottom: 50px;
 }
 
