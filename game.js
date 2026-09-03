@@ -113,8 +113,6 @@ function checkAnswer() {
 console.log("GAME.JS IS WORKING");
 
 function checkAnswer() {
-    console.log("BUTTON WAS PRESSED");
-
     const userAnswer = document.getElementById("answer").value;
     const result = document.getElementById("result");
 
@@ -123,4 +121,8 @@ function checkAnswer() {
     } else {
         result.textContent = "Incorrect. The correct answer is: " + currentAnswer;
     }
+
+    currentAnswer = newQuestion();
+
+    document.getElementById("answer").value = "";
 }
