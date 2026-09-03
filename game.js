@@ -117,9 +117,9 @@ function checkAnswer() {
     const result = document.getElementById("result");
 
     if (userAnswer.toLowerCase() === currentAnswer.toLowerCase()) {
-        result.textContent = "Correct! Well done!";
+        result.textContent = "Correct! Well done!\n" + correctVoicelines[Math.floor(Math.random() * correctVoicelines.length)];
     } else {
-        result.textContent = "Incorrect. The correct answer is: " + currentAnswer;
+        result.textContent = "Incorrect. The correct answer is: " + currentAnswer + "\n" + incorrectVoicelines[Math.floor(Math.random() * incorrectVoicelines.length)];
     }
 
     currentAnswer = newQuestion();
