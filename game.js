@@ -117,12 +117,18 @@ function checkAnswer() {
     const result = document.getElementById("result");
 
     if (userAnswer.toLowerCase() === currentAnswer.toLowerCase()) {
-        result.textContent = "Correct! Well done!\n" + correctVoicelines[Math.floor(Math.random() * correctVoicelines.length)];
+        result.textContent = "Correct! Well done! | " + correctVoicelines[Math.floor(Math.random() * correctVoicelines.length)];
     } else {
-        result.textContent = "Incorrect. The correct answer is: " + currentAnswer + "\n" + incorrectVoicelines[Math.floor(Math.random() * incorrectVoicelines.length)];
+        result.textContent = "Incorrect. The correct answer is: " + currentAnswer + " | " + incorrectVoicelines[Math.floor(Math.random() * incorrectVoicelines.length)];
     }
 
     currentAnswer = newQuestion();
 
     document.getElementById("answer").value = "";
 }
+
+document.getElementById("answer").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        checkAnswer();
+    }
+});
