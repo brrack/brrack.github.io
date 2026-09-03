@@ -109,3 +109,18 @@ function checkAnswer() {
         result.textContent = "Incorrect. The correct answer is: " + currentAnswer;
     }
 }
+
+console.log("GAME.JS IS WORKING");
+
+function checkAnswer() {
+    console.log("BUTTON WAS PRESSED");
+
+    const userAnswer = document.getElementById("answer").value;
+    const result = document.getElementById("result");
+
+    if (userAnswer.toLowerCase() === currentAnswer.toLowerCase()) {
+        result.textContent = "Correct! Well done!";
+    } else {
+        result.textContent = "Incorrect. The correct answer is: " + currentAnswer;
+    }
+}
