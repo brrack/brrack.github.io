@@ -26,29 +26,8 @@ h1 {
   font-size: 40px;
 }
 
-.page {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 main {
   flex: 1;
-}
-
-img {
-  align-self: center;
-  transform: scale(.35);
-  outline-style: solid;
-  outline-color: #222222;
-  outline-width: 8px;
-}
-
-.deca-images {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 1fr 1fr;
-  gap: -50px;
 }
 
 img:first-child {
@@ -57,19 +36,6 @@ img:first-child {
 
 img:second-child {
   grid-column: 2;
-}
-
-article {
-  align-self: center;
-  border: 8px solid #222222;
-  border-radius: 12px;
-  padding: 24px;
-  background: #323234;
-  box-shadow: 0 0 40px #395084;
-  max-width: 400px;
-  max-height: 600px;
-  margin: 0 auto;
-  margin-bottom: 50px;
 }
 
 footer {
