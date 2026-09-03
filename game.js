@@ -91,8 +91,9 @@ function newQuestion() {
         answer = randomIon[0];
     }
 
-    console.log("Question:", question);
-    console.log("Answer:", answer);
+    document.getElementById("question").textContent = question;
+
+    return answer;
 }
 
-newQuestion();
+let currentAnswer = newQuestion();
