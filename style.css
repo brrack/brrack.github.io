@@ -81,6 +81,15 @@ footer {
 }
 
 .large-text-input {
+  align-self: center;
+  font-size: 1.5rem;
+  width: 100%;
+  max-width: 400px;
+  padding: 8px 12px;
+}
+
+.submit {
+  align-self: center;
   font-size: 1.5rem;
   width: 100%;
   max-width: 400px;
