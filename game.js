@@ -97,3 +97,15 @@ function newQuestion() {
 }
 
 let currentAnswer = newQuestion();
+
+function checkAnswer() {
+    const userAnswer = document.getElementById("answer").value;
+
+    const result = document.getElementById("result");
+
+    if (userAnswer.toLowerCase() === currentAnswer.toLowerCase()) {
+        result.textContent = "Correct! Well done!";
+    } else {
+        result.textContent = "Incorrect. The correct answer is: " + currentAnswer;
+    }
+}

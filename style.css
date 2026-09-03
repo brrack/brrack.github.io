@@ -79,3 +79,10 @@ footer {
   display: block;
   padding: 30px;
 }
+
+.large-text-input {
+  font-size: 1.5rem;
+  width: 100%;
+  max-width: 400px;
+  padding: 8px 12px;
+}
